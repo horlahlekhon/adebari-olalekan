@@ -9,11 +9,8 @@ const heroContent = {
     heroImage: heroImg,
     heroMobileImage: heroImgMobile,
     heroTitleName: "olalekan adebari",
-    heroDesignation: "web designer",
-    heroDescriptions: `I'm a Nigerian based web designer & front‑end developer focused on
-  crafting clean & user‑friendly experiences, I am passionate about
-  building excellent software that improves the lives of those
-  around me.`,
+    heroDesignation: "software engineer",
+    heroDescriptions: `I am a Pace setting Technologist, Software engineer and an aspiring Software architect, building anything that runs on computers to drive business growth and enrich human lives for the past 8 years. I am an Economics enthusiast and a Sociology Nerd.`,
     heroBtn: "more about me",
 };
 
