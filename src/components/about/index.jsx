@@ -38,7 +38,7 @@ const index = () => {
               {/* End personal info */}
 
               <div className="col-12 mt-1">
-                <a className="button" href={cv} download>
+                <a className="button" href="https://docs.google.com/document/d/1O-oGrV3zgchFXiBdiwnK_4FJxs0RPiMYqqfi8kQs2Uk/edit?usp=sharing" download>
                   <span className="button-text">Download CV</span>
                   <span className="button-icon fa fa-download"></span>
                 </a>

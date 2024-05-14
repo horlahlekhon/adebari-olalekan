@@ -3,8 +3,6 @@ import React from "react";
 const achievementsContent = [
   { title: "8", subTitle1: "years of", subTitle2: "experience" },
   { title: "10", subTitle1: "completed", subTitle2: "projects" },
-  // { title: "81", subTitle1: "Happy", subTitle2: "customers" },
-  // { title: "53", subTitle1: "awards", subTitle2: "won" },
 ];
 
 const Achievements = () => {
