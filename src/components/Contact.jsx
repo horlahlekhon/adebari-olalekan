@@ -8,67 +8,42 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
-        form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
-      )
-      .then(
-        (result) => {
-          toast.success("Message Sent Successfully!", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          document.getElementById("myForm").reset();
-        },
-        (error) => {
-          toast.error("Ops Message Not Sent!", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-        }
-      );
+    const recipient = 'adebari.olalekan.oluwaseun@gmail.com';
+    const subject = e.target.subject.value;
+    const message = e.target.message.value;
+
+    const mailToLink = `mailto:${recipient}?subject=${subject}&body=${message}`;
+    console.log(mailToLink);
+    window.location.href = mailToLink;
   };
 
   return (
     <>
       <form id="myForm" className="contactform" ref={form} onSubmit={sendEmail}>
         <div className="row">
-          <div className="col-12 col-md-6">
-            <div className="form-group">
-              <input type="text" name="name" placeholder="YOUR NAME" required />
-            </div>
-          </div>
+          {/*<div className="col-12 col-md-6">*/}
+          {/*  <div className="form-group">*/}
+          {/*    <input type="text" name="name" placeholder="YOUR NAME" required />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
-          <div className="col-12 col-md-6">
-            <div className="form-group">
-              <input
-                type="email"
-                name="user_email"
-                placeholder="YOUR EMAIL"
-                required
-              />
-            </div>
-          </div>
+          {/*<div className="col-12 col-md-6">*/}
+          {/*  <div className="form-group">*/}
+          {/*    <input*/}
+          {/*      type="email"*/}
+          {/*      name="user_email"*/}
+          {/*      placeholder="YOUR EMAIL"*/}
+          {/*      required*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
           <div className="col-12 col-md-12">
             <div className="form-group">
               <input
                 type="text"
                 name="subject"
-                placeholder="YOUR SUBJECT"
+                placeholder="ENTER SUBJECT"
                 required
               />
             </div>
